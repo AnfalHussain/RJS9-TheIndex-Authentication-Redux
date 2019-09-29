@@ -21,14 +21,17 @@ function App({ loading }) {
           {loading ? (
             <Loading />
           ) : (
-            <Switch>
-              <Route path="/authors/:authorID" component={AuthorDetail} />
-              <Route path="/authors" component={AuthorsList} />
-              <Route path="/signup" component={Signup} />
-              <Route path="/login" component={Login} />
-              <Redirect to="/authors" />
-            </Switch>
-          )}
+              <Switch>
+                <Route path="/authors/:authorID" component={AuthorDetail} />
+                <Route path="/authors" component={AuthorsList} />
+                <Route path="/signup" component={Signup} />
+                <Route path="/login" component={Login} />
+
+
+
+                <Redirect to="/authors" />
+              </Switch>
+            )}
         </div>
       </div>
     </div>
